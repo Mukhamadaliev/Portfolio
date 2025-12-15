@@ -20,13 +20,14 @@ const Skills = ({ isDarkMode = false, t }) => {
   ];
 
   const softSkills = [
-    { name: t("Communication"), icon: <FaComments />, level: 90 },
-    { name: t("Teamwork"), icon: <FaUsers />, level: 85 },
-    { name: t("Creativity"), icon: <FaLightbulb />, level: 80 },
-    { name: t("Time Management"), icon: <FaClock />, level: 85 },
-    { name: t("Problem Solving"), icon: <FaPuzzlePiece />, level: 80 },
-    { name: t("Critical Thinking"), icon: <FaBrain />, level: 75 }
+    { name: t("Communication"), icon: <FaComments />, level: 90, color: "#FF6B6B" },
+    { name: t("Teamwork"), icon: <FaUsers />, level: 85, color: "#6BCB77" },
+    { name: t("Creativity"), icon: <FaLightbulb />, level: 80, color: "#FFD93D" },
+    { name: t("Time Management"), icon: <FaClock />, level: 85, color: "#4D96FF" },
+    { name: t("Problem Solving"), icon: <FaPuzzlePiece />, level: 80, color: "#9B5DE5" },
+    { name: t("Critical Thinking"), icon: <FaBrain />, level: 75, color: "#FF9F1C" }
   ];
+
 
   const [activeTab, setActiveTab] = useState("hard");
   const [activeIndex, setActiveIndex] = useState(null);

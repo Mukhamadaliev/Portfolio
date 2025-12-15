@@ -8,7 +8,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./sagbar.css";
 import imgSagbar from "./assets/image.png";
-// o‘chiring:
 
 
 const Sagbar = ({ isDarkMode }) => {
