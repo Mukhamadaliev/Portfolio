@@ -23,23 +23,19 @@ const Contact = ({ isDarkMode, t }) => {
   const token = process.env.REACT_APP_TELEGRAM_BOT_TOKEN;
   const chatId = process.env.REACT_APP_TELEGRAM_CHAT_ID;
 
-  // Telefon raqamni formatlash va validatsiya
   const handlePhoneChange = (e) => {
     let value = e.target.value.replace(/[^\d+]/g, '');
     
-    // Faqat +998 bilan boshlanishini ta'minlash
     if (!value.startsWith('+998')) {
       value = '+998' + value.replace(/^\+?/, '');
     }
     
-    // 13 ta belgidan ortiq bo'lmasligi
     if (value.length > 13) {
       value = value.substring(0, 13);
     }
     
     setFormData({ ...formData, number: value });
     
-    // Validatsiya: +998 va 9 ta raqam (jami 13 ta belgi)
     const isValid = value.length === 13 && /^\+998\d{9}$/.test(value);
     setFieldStatus(prev => ({
       ...prev,
@@ -55,7 +51,6 @@ const Contact = ({ isDarkMode, t }) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
     
-    // Real-time validatsiya
     let isValid = false;
     
     switch (name) {
@@ -113,7 +108,6 @@ const Contact = ({ isDarkMode, t }) => {
       if (res.ok && data.ok) {
         setStatus(t('Message sent successfully!'));
         setFormData({ name: "", email: "", message: "", number: "+998" });
-        // Field statuslarni reset qilish
         setFieldStatus({
           name: { isValid: false, isTouched: false },
           email: { isValid: false, isTouched: false },
@@ -135,7 +129,6 @@ const Contact = ({ isDarkMode, t }) => {
     e.preventDefault();
     const { name, email, number, message } = formData;
 
-    // Barcha maydonlarni tekshirish
     const isFormValid = fieldStatus.name.isValid && 
                        fieldStatus.email.isValid && 
                        fieldStatus.number.isValid && 
@@ -144,7 +137,6 @@ const Contact = ({ isDarkMode, t }) => {
     if (!isFormValid) {
       setStatus(t('Please fill all fields'));
       
-      // Barcha maydonlarni touched qilish
       setFieldStatus(prev => ({
         name: { ...prev.name, isTouched: true },
         email: { ...prev.email, isTouched: true },
@@ -171,7 +163,6 @@ ${message}
     sendMessage(text);
   };
 
-  // Status ikonkasi
   const renderStatusIcon = (fieldName) => {
     const field = fieldStatus[fieldName];
     if (!field.isTouched) return null;
@@ -194,17 +185,16 @@ ${message}
         </div>
 
         <div className="contact-grid">
-          {/* Contact Information */}
           <div className="contact-info">
             <div className="info-block">
               <h3 className="info-label"><FaPhoneAlt /> {t('Phone')}</h3>
               <p className="info-value">
-                <a href="tel:+998947238850">+998 94 723 88 50</a>
+                <a href="tel:+998947238850">+998(94)723-88-50</a>
               </p>
             </div>
             <div className="info-block">
               <h3 className="info-label"><FaEnvelope /> {t('Email')}</h3>
-              <p className="info-value">muxamadaliyevibrohim2009@gmail.com</p>
+              <p className="info-value"><a href="mailto:muxamadaliyevibrohim2009@gmail.com">muxamadaliyevibrohim2009@gmail.com</a></p>
             </div>
             <div className="info-block">
               <h3 className="info-label"><FaMapMarkerAlt /> {t('Address')}</h3>
@@ -220,7 +210,6 @@ ${message}
             </div>
           </div>
 
-          {/* Contact Form */}
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="name" className="info-label">{t('Name')}</label>
