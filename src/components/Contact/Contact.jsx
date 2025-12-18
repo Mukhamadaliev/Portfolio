@@ -192,6 +192,7 @@ ${message}
                 <a href="tel:+998947238850">+998(94)723-88-50</a>
               </p>
             </div>
+            
             <div className="info-block">
               <h3 className="info-label"><FaEnvelope /> {t('Email')}</h3>
               <p className="info-value"><a href="mailto:muxamadaliyevibrohim2009@gmail.com">muxamadaliyevibrohim2009@gmail.com</a></p>
