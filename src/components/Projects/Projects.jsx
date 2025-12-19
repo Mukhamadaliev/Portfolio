@@ -3,8 +3,9 @@ import './Projects.css'
 import rasm1 from './assets/2025-11-09_14-33-31.png'
 import rasm2 from './assets/2025-11-09_14-49-31.png'
 import rasm3 from './assets/rasm-3.png'
-import rasm4 from './assets/2025-06-10_21-22-12.png'
-import rasm5 from './assets/2025-06-10_22-38-38.png'
+import rasm4 from './assets/2025-12-19_21-01-00.png'
+import rasm5 from './assets/2025-12-19_22-26-53.png'
+import rasm6 from './assets/2025-12-19_22-41-01.png'
 
 const Projects = ({ isDarkMode, t }) => {
     return (
@@ -24,7 +25,6 @@ const Projects = ({ isDarkMode, t }) => {
                                     <ul>
                                         <li>React</li>
                                         <li>CSS</li>
-                                        <li>JavaScript</li>
                                     </ul>
                                     <a href="https://github.com/Mukhamadaliev/project.git"><i className=' i font-size-25 bx bxl-github'></i></a>
                                     <a href="https://project-psi-rose-65.vercel.app/"><i className=' i font-size-25 bx bx-link-external'></i></a>
@@ -35,7 +35,6 @@ const Projects = ({ isDarkMode, t }) => {
                                     <ul>
                                         <li>React</li>
                                         <li>Css</li>
-                                        <li>JavaScript</li> 
                                     </ul>
                                     <a href="https://github.com/Mukhamadaliev/Web-Sayt.git"><i className=' i font-size-25 bx bxl-github'></i></a>
                                     <a href="https://web-sayt-five.vercel.app/"><i className=' i font-size-25 bx bx-link-external'></i></a>
@@ -44,9 +43,8 @@ const Projects = ({ isDarkMode, t }) => {
                                     <img src={rasm3} alt="mini sayt" /><br />
                                     <br />
                                     <ul>
-                                        <li>Html</li>
+                                        <li>React</li>
                                         <li>Css</li>
-                                        <li>JavaScript</li>
                                     </ul>
                                     <a href="https://github.com/Mukhamadaliev/ServiceHub.git"><i className=' i font-size-25 bx bxl-github'></i></a>
                                     <a href="https://service-hub-ivory.vercel.app/"><i className=' i font-size-25 bx bx-link-external'></i></a>
@@ -58,34 +56,31 @@ const Projects = ({ isDarkMode, t }) => {
                                     <img src={rasm4} alt="sayt" /><br />
                                     <br />
                                     <ul>
-                                        <li>Html</li>
+                                        <li>React</li>
                                         <li>Css</li>
-                                        <li>JavaScript</li>
                                     </ul>
-                                    <a href="https://github.com/Mukhamadaliev/Portfolio.git"><i className=' i font-size-25 bx bxl-github'></i></a>
-                                    <a href="https://portfolio-swart-pi-84.vercel.app/"><i className=' i font-size-25 bx bx-link-external'></i></a>
+                                    <a href="https://github.com/Mukhamadaliev/MyWebsite.git"><i className=' i font-size-25 bx bxl-github'></i></a>
+                                    <a href="https://my-website-tan-tau-81.vercel.app/"><i className=' i font-size-25 bx bx-link-external'></i></a>
                                 </div>
                                 <div className="project-2  project-5">
                                     <img src={rasm5} alt="belissimo" /><br />
                                     <br />
                                     <ul>
-                                        <li>Html</li>
+                                        <li>React</li>
                                         <li>Css</li>
-                                        <li>JavaScript</li>
                                     </ul>
-                                    <a href="https://github.com/Mukhamadaliev/Protfolio.git"><i className=' i font-size-25 bx bxl-github'></i></a>
-                                    <a href="https://protfolio-lake-iota.vercel.app/"><i className=' i font-size-25 bx bx-link-external'></i></a>
+                                    <a href="https://github.com/Mukhamadaliev/MyApp.git"><i className=' i font-size-25 bx bxl-github'></i></a>
+                                    <a href="https://my-app-chi-eight-20.vercel.app/"><i className=' i font-size-25 bx bx-link-external'></i></a>
                                 </div>
                                 <div className="project-3">
-                                    <img src={rasm3} alt="mini sayt" /><br />
+                                    <img src={rasm6} alt="mini sayt" /><br />
                                     <br />
                                     <ul>
-                                        <li>Html</li>
+                                        <li>React</li>
                                         <li>Css</li>
-                                        <li>JavaScript</li>
                                     </ul>
-                                    <a href="https://github.com/Mukhamadaliev/mini-sayt-web.git"><i className=' i font-size-25 bx bxl-github'></i></a>
-                                    <a href="https://mini-sayt-web.vercel.app/"><i className=' i font-size-25 bx bx-link-external'></i></a>
+                                    <a href="https://github.com/Mukhamadaliev/TechFlow.git"><i className=' i font-size-25 bx bxl-github'></i></a>
+                                    <a href="https://tech-flow-zeta.vercel.app/"><i className=' i font-size-25 bx bx-link-external'></i></a>
                                 </div>
                             </div>
                             <br />
