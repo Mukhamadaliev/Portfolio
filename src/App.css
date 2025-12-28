@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 50px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+:root {
+  --primary-color: #318CE7;
+  --white-color: #FFFFFF;
+  --black-color: #000000;
+  --font-size: font-size: 20px;
+}
+
+.icons {
+  cursor: pointer;
+}
+
+.sagbar-container.desktop.collapsed~.main-content .router>* {
+  margin-left: 80px !important;
+  width: calc(100% - 80px) !important;
+  transition: all 0.3s ease;
+}
+
+.sagbar-container.desktop:not(.collapsed)~.main-content .router>* {
+  margin-left: 280px !important;
+  width: calc(100% - 280px) !important;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+
+  .sagbar-container.desktop.collapsed~.main-content .router>*,
+  .sagbar-container.desktop:not(.collapsed)~.main-content .router>* {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+}
+
+.app-container {
+  position: relative;
+}
+
+.main-content {
+  min-height: 100vh;
+}
+
+.router {
+  width: 100%;
+}
+
+.sagbar-container.desktop.collapsed~.main-content .router>* {
+  margin-left: 80px !important;
+  width: calc(100% - 80px) !important;
+  transition: all 0.3s ease;
+}
+
+.sagbar-container.desktop:not(.collapsed)~.main-content .router>* {
+  margin-left: 280px !important;
+  width: calc(100% - 280px) !important;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+
+  .sagbar-container.desktop.collapsed~.main-content .router>*,
+  .sagbar-container.desktop:not(.collapsed)~.main-content .router>* {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+}

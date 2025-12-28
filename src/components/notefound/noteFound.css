@@ -1,0 +1,101 @@
+:root {
+    --primary-gradient-start: #1e3c72;
+    --primary-gradient-end: #2a5298;
+    --error-color: #ff4d4d; 
+    --error-color-hover: #e63e3e; 
+    --text-light: #fff;
+    --text-dark-opacity: rgba(255, 255, 255, 0.8);
+    --font-family-base: 'Inter', sans-serif; 
+}
+
+.notfound-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary-gradient-start), var(--primary-gradient-end));
+    color: var(--text-light);
+    font-family: var(--font-family-base); 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.notfound-title {
+    font-size: 120px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--error-color); 
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.notfound-subtitle {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.notfound-text {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 10px auto 30px; 
+    opacity: 0.8;
+}
+
+.notfound-btn {
+    padding: 12px 25px;
+    background: var(--error-color); 
+    border: none;
+    border-radius: 30px;
+    color: var(--text-light);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease; 
+}
+
+.notfound-btn:hover {
+    background: var(--error-color-hover); 
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    .notfound-container {
+        padding: 1rem;
+    }
+
+    .notfound-title {
+        font-size: 4rem;
+    }
+
+    .notfound-subtitle {
+        font-size: 1.75rem; 
+    }
+
+    .notfound-text {
+        font-size: 1rem; 
+        margin: 10px auto 20px; 
+    }
+
+    .notfound-btn {
+        padding: 0.8rem 1.5rem; 
+        font-size: 0.9rem;
+        width: auto; 
+        max-width: 250px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .notfound-title {
+        font-size: 3rem;
+    }
+
+    .notfound-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .notfound-btn {
+        width: 100%; 
+        max-width: 300px;
+    }
+}
